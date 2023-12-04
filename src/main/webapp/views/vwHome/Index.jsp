@@ -5,10 +5,10 @@
     <jsp:body>
         <div class="card">
             <h4 class="card-header">
-                Index
+                Chào mừng đến trang web mua sắm !
             </h4>
-            <div class="card-body">
-                Hello World
+            <div class="card-body h-100">
+                <img src="${pageContext.request.contextPath}/public/imgs/sp/Background/Welcome.gif" alt=""  >
             </div>
         </div>
     </jsp:body>

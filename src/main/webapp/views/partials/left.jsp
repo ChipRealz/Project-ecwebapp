@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <jsp:useBean id="categoriesWithDetails" scope="request" type="java.util.List<com.ute.ecwebapp.beans.Category>"/>
@@ -9,14 +9,14 @@
     </h4>
     <div class="list-group list-group-flush">
         <c:forEach items="${categoriesWithDetails}" var="c">
-            <a href="${pageContext.request.contextpath}/Product/ByCat?id=${c.catID}" class="list-group-item list-group-item-action">
+            <a href="${pageContext.request.contextPath}/Product/ByCat?id=${c.catID}" class="list-group-item list-group-item-action">
                 <i class="fa fa-caret-right" aria-hidden="true"></i>
-                ${c.catName}
+                    ${c.catName}
             </a>
         </c:forEach>
-<%--        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">--%>
-<%--            The current link item--%>
-<%--        </a>--%>
+        <%--<a href="#" class="list-group-item list-group-item-action active" aria-current="true">--%>
+        <%--  The current link item--%>
+        <%--</a>--%>
     </div>
 </div>
 
@@ -26,11 +26,11 @@
     </h4>
     <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-            The current link item
+            The current link item (edited)
         </a>
         <a href="#" class="list-group-item list-group-item-action">A second link item</a>
         <a href="#" class="list-group-item list-group-item-action">A third link item</a>
         <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
     </div>
 </div>

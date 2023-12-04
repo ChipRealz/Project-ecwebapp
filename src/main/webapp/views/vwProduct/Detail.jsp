@@ -12,7 +12,7 @@
                 ${product.proName}
             </h4>
             <div class="card-body">
-                <img src="${pageContext.request.contextPath}/public/imgs/sp/${product.proID}/aoPolo.jpg" alt="${product.proName}" title="${product.proName}">
+                <img src="${pageContext.request.contextPath}/public/imgs/sp/${product.proID}/rsz_laptop.jpg" alt="${product.proName}" title="${product.proName}">
                 <p class="card-text mt-3">
                     Giá bán:
                     <span class="text-danger font-weight-bold">

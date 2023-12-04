@@ -78,6 +78,7 @@ public class AdminCategoryServlet extends HttpServlet {
             default:
                 ServletUtils.foward("/views/404.jsp", request, response);
                 break;
+
         }
     }
 

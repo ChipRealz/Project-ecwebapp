@@ -5,11 +5,17 @@
     <jsp:body>
         <div class="card">
             <h4 class="card-header">
-                About
+                E-Commerce is a web application for online shopping.
             </h4>
             <div class="card-body">
-                E-Commerce is a web application for online shopping.
+                About us:
+                <ul>
+                    <li>Developed by: <a href="https://www.facebook.com/kho.hutiu.58">Trần Minh Trí</a></li>
+                    <li>Student ID: 21110247</li>
+
+                </ul>
             </div>
+
         </div>
     </jsp:body>
 </t:main>

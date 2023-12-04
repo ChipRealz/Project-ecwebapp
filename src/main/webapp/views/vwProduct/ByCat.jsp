@@ -1,35 +1,34 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
-<%--<jsp:useBean id="category" scope="request" type="com.ute.ecwebapp.beans.Category"/>--%>
-<jsp:useBean id="products" scope="request" type="java.util.List<com.ute.ecwebapp.beans.Product>"/>
+<jsp:useBean id="products" scope="request" type="java.util.List<com.ute.ecwebapp.beans.Product>" />
+
 <t:main>
     <jsp:body>
         <div class="card">
-            <h5 class="card-header">
+            <h4 class="card-header">
                 Products
-            </h5>
-
+            </h4>
             <c:choose>
                 <c:when test="${products.size() == 0}">
                     <div class="card-body">
-                        <p class="card-text">Không có dữ liệu phù hợp!</p>
+                        <p class="card-text">Không có dữ liệu.</p>
                     </div>
                 </c:when>
                 <c:otherwise>
                     <div class="card-body">
                         <div class="row">
                             <c:forEach items="${products}" var="c">
-                                <div class="col-sm-4 mb-2">
-                                    <div class="card">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card h-100">
+                                        <img src="${pageContext.request.contextPath}/public/imgs/sp/${c.proID}/rsz_laptop.jpg" alt="${c.proName}" title="${c.proName}" class="card-img-top">
                                         <div class="card-body">
-                                            <img src="${pageContext.request.contextPath}/public/imgs/sp/${c.proID}/aoPolo.jpg" alt="${c.proName}" title="${c.proName}" class="card-img-top">
-                                            <h3 class="card-title">${c.proName}</h3>
-                                            <h4 class="card-title">
-                                                <fmt:formatNumber value="${c.price}" type="number"/>
-                                            </h4>
+                                            <h6 class="card-title">${c.proName}</h6>
+                                            <h5 class="card-title text-danger">
+                                                <fmt:formatNumber value="${c.price}" type="number" /> Dollars
+                                            </h5>
                                             <p class="card-text">${c.tinyDes}</p>
                                         </div>
                                         <div class="card-footer text-muted">
@@ -42,13 +41,13 @@
                                                 Add to cart
                                             </a>
                                         </div>
+                                    </div>
                                 </div>
                             </c:forEach>
                         </div>
                     </div>
                 </c:otherwise>
             </c:choose>
-            </div>
         </div>
     </jsp:body>
 </t:main>
