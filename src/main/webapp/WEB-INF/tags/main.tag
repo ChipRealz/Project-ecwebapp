@@ -11,7 +11,7 @@
 <body>
 <jsp:include page="../../views/partials/nav.jsp"/>
 
-<div class="container-fluid mt-4">
+<div class="container-fluid mt-4 mb-3">
     <div class="row">
         <div class="col-sm-3">
             <jsp:include page="../../views/partials/left.jsp"/>
