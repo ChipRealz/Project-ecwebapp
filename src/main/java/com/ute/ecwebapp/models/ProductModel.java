@@ -9,6 +9,12 @@ import java.util.List;
 
 public class ProductModel {
 
+    public  static List<Product> getAllProduct() {
+        String sql = "select * from products";
+        try (Connection con = DbUtils.getConnection()) {
+            return con.createQuery(sql).executeAndFetch(Product.class);
+        }
+    }
     public static List<Product> findAll() {
         String sql = "select * from products";
         try (Connection con = DbUtils.getConnection()) {

@@ -16,6 +16,9 @@
                 <a class="nav-link" href="/Demo_WebApp/Home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="${pageContext.request.contextPath}/views/vwHome/AllProduct.jsp">Products <i class="fa fa-product-hunt" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="${pageContext.request.contextPath}/views/vwHome/About.jsp">About Us</a>
             </li>
 <%--            <li class="nav-item dropdown">--%>
