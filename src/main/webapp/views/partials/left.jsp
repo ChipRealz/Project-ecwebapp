@@ -22,15 +22,11 @@
 
 <div class="card mt-3">
     <h4 class="card-header">
-        Featured
+        Popular Brands <i class="fa fa-star" aria-hidden="true"></i>
     </h4>
     <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-            The current link item (edited)
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+        <a href="https://saigonswagger.com/" class="list-group-item list-group-item-action">SAIGONSWAGGER </a>
+        <a href="https://dirtycoins.vn/" class="list-group-item list-group-item-action">DIRTYCOINS</a>
+        <a href="https://www.uniqlo.com/vn/vi/" class="list-group-item list-group-item-action">UNIQLO</a>
     </div>
 </div>
