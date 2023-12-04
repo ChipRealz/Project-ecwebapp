@@ -23,7 +23,7 @@
                             <c:forEach items="${products}" var="c">
                                 <div class="col-sm-4 mb-3">
                                     <div class="card h-100">
-                                        <img src="${pageContext.request.contextPath}/public/imgs/sp/${c.proID}/rsz_laptop.jpg" alt="${c.proName}" title="${c.proName}" class="card-img-top">
+                                        <img src="${pageContext.request.contextPath}/public/imgs/sp/${c.proID}/" alt="${c.proName}" title="${c.proName}" class="card-img-top">
                                         <div class="card-body">
                                             <h6 class="card-title">${c.proName}</h6>
                                             <h5 class="card-title text-danger">
